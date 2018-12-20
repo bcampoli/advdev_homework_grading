@@ -39,7 +39,7 @@ pipeline {
       inheritFrom "maven"
       containerTemplate {
         name "jnlp"
-        image "docker-registry.default.svc:5000/gpte-jenkins/jenkins-agent-appdev:latest"
+        image "bcampoli/jenkins-skopeo-slave:latest"
         resourceRequestMemory "1Gi"
         resourceLimitMemory "2Gi"
         resourceRequestCpu "500m"
