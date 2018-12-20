@@ -39,7 +39,7 @@ pipeline {
       inheritFrom "maven"
       containerTemplate {
         name "jnlp"
-        image "bcampoli/jenkins-skopeo-slave:latest"
+        image "bcampoli/jenkins-skopeo-slave:v0.1"
         resourceRequestMemory "1Gi"
         resourceLimitMemory "2Gi"
         resourceRequestCpu "500m"
